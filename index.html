@@ -74,10 +74,23 @@
     </div>
     <!-- ---------------------------------------- MainPage ---------------------------------------- -->
     <div class="container">
-      <input id="search" type="text" placeholder="search" />
-      <div id="row" class="row">
-        <!-- ---------------------------------------- Card ---------------------------------------- -->
-        <!-- <div class="col-3">
+      <div class="container">
+        <input
+          id="search"
+          type="text"
+          placeholder="search"
+          onkeydown="keyDown(event)"
+        />
+        <button
+          type="button"
+          class="btn btn-secondary skip"
+          onclick="display()"
+        >
+          Search
+        </button>
+        <div id="row" class="row">
+          <!-- ---------------------------------------- Card ---------------------------------------- -->
+          <!-- <div class="col-3">
           <div class="card">
             <img src="..." class="card-img-top" alt="..." />
             <div class="card-body">
@@ -96,8 +109,13 @@
             </div>
           </div>
         </div> -->
+        </div>
       </div>
     </div>
+    <!-- ---------------------------------------- Cart Vertical Navbar ---------------------------------------- -->
+    <ul id="cart" class="nav flex-column fixed-top">
+      <li class="nav-item"><h4>Cart</h4></li>
+    </ul>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

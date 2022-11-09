@@ -1,0 +1,12 @@
+#cart {
+  background-color: aqua;
+  top: 20vh;
+  right: 0;
+  left: auto;
+
+  min-width: 300px;
+}
+
+.red-border {
+  border: solid 1px red;
+}
